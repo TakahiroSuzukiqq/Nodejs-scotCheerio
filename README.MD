@@ -8,3 +8,4 @@
    ````  
   
 2.  
+  in the terminal do $node ex1.js to make sure the server is running.  
