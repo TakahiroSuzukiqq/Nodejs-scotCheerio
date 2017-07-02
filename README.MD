@@ -11,5 +11,9 @@
   in the terminal do $node ex1.js to make sure the server is running.  
 
   create downloads folder and store google.com data into it.  
+    
+  create ex2.js file and scrape Indeed data(FYR: created "basic_syntax file" followed by the tutorial)  
+    
+
 
     
