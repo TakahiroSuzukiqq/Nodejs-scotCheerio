@@ -31,9 +31,9 @@ request(url, function(err, resp, body){
 
     //取ってくるのはすべてobjectなのでobjectとなるvar jobをつくる。これら、JSONで返ってきます
     var job = {
+     companyName: companyNameText,   
      jobTitle: jobTitleText,        //the name of the key and value pair of hte object
-     location: locationText, 
-     companyName: companyNameText,
+     location: locationText,
      summary: summaryText 
     }
 

@@ -9,7 +9,7 @@ var fs = require('fs');
 var port = 8080;
 
 //#1setup url that we scrape
-var url = "https://www.indeed.com/jobs?l=Los+Angeles&_ga=2.148295732.247631630.1498986780-1138075501.1498986780"
+var url = "https://www.indeed.com/cmp/Fuze-Lab/jobs/Entry-Junior-PHPJquery-MySQL-Coder-Team-Member-01790db21236725e"
 
 //#1using request method to pass the url, create err function and the body
 //set $ variable, this is cheerio.load method. Allow us to grab and pass the element of the page, all the pages to cheerio.
@@ -20,7 +20,7 @@ request(url, function(err, resp, body){
     // var companyNameText = companyName.text();  //however in order to get the text itself, we have to chain a .text method
 
 //#2var companyNameとcompanyNameTextのチェインを使わずにjavascriptのfilter methodを使うこともできる
-   $('./company').filter(function() {    //filter out the information whatever we're looking for.
+   $('.company').filter(function() {    //filter out the information whatever we're looking for.
      var companyName = $(this);
      companyNameText = companyName.text();
    })
