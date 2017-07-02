@@ -7,23 +7,37 @@ var app = express();
 var port = 8080;
 
 //Example1 scriping google.com
-var url = "http://google.com";
-request(url, function(err, resp, body){
-  if(err){
-      console.log(err);
-   }else{
-      //console.log(body);
-   }
-  })
+// var url = "http://google.com";
+// request(url, function(err, resp, body){
+//   if(err){
+//       console.log(err);
+//    }else{
+//       //console.log(body);
+//    }
+//   });
 
 //Example2 
 //With this simple code, we're able to download google.com and save it into our downloads folder with the name Google.html 
+// var destination = fs.createWriteStream('downloads/google.html');
+// var url = "http://google.com";
+// request(url)
+// .pipe(destination)
+
+//Eample3
 var destination = fs.createWriteStream('downloads/google.html');
 var url = "http://google.com";
 request(url)
-.pipe(destination)
-
-//
+ .pipe(destination);
+//  .on('finish', function(){
+//      console.log(done);
+//     })
+//  .on('error', function(err){
+//      console.log(err);
+//  });
+// or as a alternative way
+destination.on('finish', function(){
+    console.log('all done');
+});
 
 app.listen(port);
 console.log("server is listening on" + port);
