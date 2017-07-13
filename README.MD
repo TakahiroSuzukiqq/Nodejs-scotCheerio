@@ -37,7 +37,7 @@
    <a href="https://ibb.co/ftPqLF"><img src="https://preview.ibb.co/iUSo7v/Screen_Shot_2017_07_13_at_22_00_06.png" alt="Screen_Shot_2017_07_13_at_22_00_06" border="0"></a>  
         
           
-3. ex2a.js file  : Scraping particular information from Indeed and store them  
+3. ex2a.js file  : Scraping particular information from Indeed 
    Scraping particular information by declaring as following, and display on terminal.  
    ````  
     var path = require('path');
@@ -76,4 +76,4 @@
    ````    
       <a href="https://ibb.co/iOmvLF"><img src="https://preview.ibb.co/nEFpfF/Screen_Shot_2017_07_13_at_21_56_50.png" alt="Screen_Shot_2017_07_13_at_21_56_50" border="0"></a>  
         
-        
+
