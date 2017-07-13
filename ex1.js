@@ -6,7 +6,7 @@ var fs = require('fs');
 var app = express();
 var port = 8080;
 
-//Example1 scriping google.com
+//Example1 scraping google.com
 // var url = "http://google.com";
 // request(url, function(err, resp, body){
 //   if(err){

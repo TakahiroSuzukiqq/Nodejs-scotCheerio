@@ -6,7 +6,7 @@ var app = express();
 var request = require('request');
 var cheerio = require('cheerio');
 var fs = require('fs');
-var port = 8080;
+// var port = 8080;
 
 //#1setup url that we scrape
 var url = "https://www.indeed.com/cmp/Fuze-Lab/jobs/Entry-Junior-PHPJquery-MySQL-Coder-Team-Member-01790db21236725e"
@@ -28,6 +28,6 @@ request(url, function(err, resp, body){
     console.log(companyNameText);              //test whether we can get company name text from the web page / terminal : node ex2.js
 })
 //#0
- app.listen(port);
- console.log('server running on'+ port);
+//  app.listen(port);
+// console.log('server running on'+ port);
 
